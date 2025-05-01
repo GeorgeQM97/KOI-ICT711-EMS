@@ -5,9 +5,9 @@ public abstract class Employee {
     protected String name;
     protected String department;
     protected double baseSalary;
-    protected double performanceRating;
+    protected String performanceRating;  // this is string
 
-    public Employee(String id, String name, String department, double baseSalary, double performanceRating) {
+    public Employee(String id, String name, String department, double baseSalary, String performanceRating) {
         this.id = id;
         this.name = name;
         this.department = department;
@@ -20,17 +20,9 @@ public abstract class Employee {
     public String getId() { return id; }
 
     public String getName() { return name; }
-    
-    public double getBaseSalary() { return baseSalary; }
-    
-    public double getPerformanceRating() { return performanceRating; }
 
-    public void setPerformanceRating(double rating) {
+    public void setPerformanceRating(String rating) {
         this.performanceRating = rating;
-    }
-    
-    public void setSalary(double salary) {
-        this.baseSalary = salary;
     }
 
     public void displayInfo() {
