@@ -1,3 +1,5 @@
 ID,Name,Department,Role,Salary,PerformanceRating
-102,Mauricio,Marketing,Regular,909.0,3.0
-103,Sumit,TI,Intern,1010.0,4
+103,Sumit,TI,Intern,1010.00,4
+105,Mohamed,Unknown,Intern,1010.00,3
+109,Killer,Understand,Manager,10000.00,7
+1010,Miguel Andrade,IT,Intern,10011.00,7

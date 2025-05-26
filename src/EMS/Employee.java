@@ -24,6 +24,10 @@ public abstract class Employee {
     public void setPerformanceRating(String rating) {
         this.performanceRating = rating;
     }
+    
+    public String getPerformanceRating() {
+        return performanceRating;
+    }
 
     public void displayInfo() {
         System.out.println("ID: " + id + ", Name: " + name + ", Department: " + department +
