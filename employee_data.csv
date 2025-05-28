@@ -1,5 +1,7 @@
 ID,Name,Department,Role,Salary,PerformanceRating
-103,Sumit,TI,Intern,1010.00,4
-105,Mohamed,Unknown,Intern,1010.00,3
+103,Sumit,TI,Intern,1222.10,9
+105,Mohamed,Unknown,Intern,818.10,3
 109,Killer,Understand,Manager,10000.00,7
 1010,Miguel Andrade,IT,Intern,10011.00,7
+107,Jhon Wick,Accounting,Intern,2430.00,3
+199,Mike,Finance,Manager,10998.90,9

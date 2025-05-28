@@ -48,9 +48,6 @@ public class Main_EMS {
             return;
         }
         
-        HashMap<String, Employee> employeeById = new HashMap<>();
-        HashMap<String, Employee> employeeByName = new HashMap<>();
-        TreeMap<Double, List<Employee>> employeeByRating = new TreeMap<>();
 
         try (BufferedReader br = new BufferedReader(new FileReader(file))) {
             String line;
@@ -165,7 +162,7 @@ public class Main_EMS {
 
     static void updateEmployee() {
         System.out.print("Enter Employee ID to update: ");
-        String id = sc.nextLine();
+        String id = sc.nextLine().trim();
 
         Employee e = employeeById.get(id); // efficient search O(1)
         if (e == null) {
@@ -185,7 +182,7 @@ public class Main_EMS {
         }
 
         // update and index
-        System.out.print("Enter new Performance Rating (Poor/Average/Good/Excellent): ");
+        System.out.print("Enter new Performance Rating 1 to 10: ");
         String newRating = sc.nextLine();
         e.setPerformanceRating(newRating);
 
@@ -242,14 +239,15 @@ public class Main_EMS {
         for (Employee e : employees) {
             // Convert the performance rating to a numerical value
             double ratingValue = getRatingValue(e.performanceRating);
-
+            System.out.println(e.getName());
+            System.out.println(ratingValue);
             // If performance is below threshold, issue a warning and apply a fine
-            if (ratingValue < 4) {
+            if (Double.parseDouble(e.performanceRating) < 4) {
                 generateWarningLetter(e); // Generate warning letter
                 applyFine(e);             // Apply salary deduction
             }
             // If performance is above threshold, issue appreciation and apply bonus
-            else if (ratingValue > 8) {
+            else if (Double.parseDouble(e.performanceRating) > 8) {
                 generateAppreciationLetter(e); // Generate appreciation letter
                 applyAwardBonus(e);            // Apply bonus to salary
             }
