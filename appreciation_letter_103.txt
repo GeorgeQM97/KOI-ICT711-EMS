@@ -1,0 +1,15 @@
+Appreciation Letter
+-------------------
+Date: Wed May 28 17:01:54 AEST 2025
+To: Sumit
+Employee ID: 103
+Department: TI
+
+Dear Sumit,
+
+We are pleased to recognize your outstanding performance!
+Your current performance rating is 9, which exceeds our expectations.
+Keep up the excellent work!
+
+Sincerely,
+Management

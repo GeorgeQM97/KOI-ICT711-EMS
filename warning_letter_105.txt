@@ -1,0 +1,15 @@
+Warning Letter
+---------------
+Date: Wed May 28 17:01:54 AEST 2025
+To: Mohamed
+Employee ID: 105
+Department: Unknown
+
+Dear Mohamed,
+
+This is a formal warning regarding your recent performance.
+Your current performance rating is 3, which is below expectations.
+Please take immediate steps to improve your performance.
+
+Sincerely,
+Management
